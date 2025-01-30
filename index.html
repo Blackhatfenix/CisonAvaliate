@@ -1,281 +1,196 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Fenix">
-    <meta name="description" content="Site de tema hacking, segurança e contato.">
-    <title>Hacking Info - Contato</title>
+    <title>Fenix - Sociedade Hacker</title>
     <style>
         body {
-            font-family: 'Courier New', monospace;
-            background-color: #0a0a0a;
-            color: #00FF00;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
-        }
-
-        header {
-            background-color: #111;
-            padding: 20px;
+            background-color: black;
+            color: lime;
+            font-family: monospace;
             text-align: center;
-            font-size: 30px;
-            font-weight: bold;
-            border-bottom: 2px solid #00FF00;
-            text-shadow: 0px 0px 10px #00FF00;
         }
-
-        header h1 {
-            font-size: 36px;
-            text-transform: uppercase;
-        }
-
-        header p {
-            font-size: 18px;
-            font-style: italic;
-        }
-
-        nav {
-            background-color: #111;
+        input, button {
+            background: black;
+            color: lime;
+            border: 1px solid lime;
             padding: 10px;
-            text-align: center;
+            margin: 5px;
         }
-
-        nav a {
-            color: #00FF00;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 18px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            transition: color 0.3s ease-in-out;
+        #dashboard, #complaints, #feedbacks {
+            display: none;
         }
-
-        nav a:hover {
-            color: #FF0000;
+        .hidden {
+            display: none;
         }
-
-        section {
-            padding: 50px;
-            text-align: center;
-            font-size: 20px;
-        }
-
-        .contact-info {
-            font-size: 22px;
-            margin-top: 20px;
-            animation: fadeIn 2s ease-out;
-        }
-
-        .contact-info a {
-            color: #00FF00;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .matrix-effect {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            animation: matrix 1.5s infinite;
-        }
-
-        .matrix-effect span {
-            position: absolute;
-            color: rgba(0, 255, 0, 0.7);
-            font-size: 30px;
-            font-family: 'Courier New', monospace;
-            animation: matrixDrop 1.5s infinite;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background-color: #111;
-            color: #00FF00;
-            text-align: center;
-            padding: 10px;
-            font-size: 14px;
-            font-style: italic;
-        }
-
-        footer a {
-            color: #00FF00;
-            text-decoration: none;
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        @keyframes matrix {
-            0% {
-                opacity: 0.2;
-            }
-            100% {
-                opacity: 0.7;
-            }
-        }
-
-        @keyframes matrixDrop {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
-                transform: translateY(100%);
-            }
-        }
-
-        .scrolling-text {
-            font-size: 24px;
-            color: #00FF00;
-            animation: scrollText 20s linear infinite;
-            font-weight: bold;
-        }
-
-        @keyframes scrollText {
-            0% {
-                transform: translateX(100%);
-            }
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        /* Login Form */
-        .login-form {
-            background-color: #222;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 50px auto;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
-        }
-
-        .login-form input {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #111;
-            color: #00FF00;
-            border: 2px solid #00FF00;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-
-        .login-form button {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #00FF00;
-            color: #111;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .login-form button:hover {
-            background-color: #FF0000;
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>Hacking Info</h1>
-        <p>Explorando os limites da tecnologia e segurança.</p>
-    </header>
+    <h1>Fenix - Sociedade Hacker</h1>
+    <h3>Email: importsbengs@gmail.com</h3>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">Sobre</a>
-        <a href="#contact">Contato</a>
-        <a href="#login" onclick="showLogin()">Login</a>
-        <a href="#services">Serviços</a>
-        <a href="#news">Notícias</a>
-    </nav>
-
-    <!-- Matrix Effect -->
-    <div class="matrix-effect">
-        <span style="left: 10%; animation-delay: 0s;">&lt;010101&gt;</span>
-        <span style="left: 20%; animation-delay: 1s;">&lt;101010&gt;</span>
-        <span style="left: 30%; animation-delay: 2s;">&lt;110101&gt;</span>
-        <span style="left: 40%; animation-delay: 3s;">&lt;111000&gt;</span>
-        <span style="left: 50%; animation-delay: 4s;">&lt;101010&gt;</span>
+    <div id="login">
+        <h2>Login</h2>
+        <input type="text" id="loginUser" placeholder="Usuário"><br>
+        <input type="password" id="loginPass" placeholder="Senha"><br>
+        <button onclick="login()">Entrar</button>
+        <button onclick="showRegister()">Criar Conta</button>
     </div>
 
-    <!-- Home Section -->
-    <section id="home">
-        <h2>Bem-vindo ao Hacking Info</h2>
-        <p>Este é o lugar onde você encontra tudo sobre segurança digital, hacking ético e as últimas tendências do mundo tech.</p>
-        <div class="scrolling-text">Atenção: Proteja seus dados! A segurança nunca foi tão importante.</div>
-    </section>
+    <div id="register" class="hidden">
+        <h2>Cadastro</h2>
+        <input type="text" id="registerUser" placeholder="Usuário"><br>
+        <input type="password" id="registerPass" placeholder="Senha"><br>
+        <button onclick="register()">Cadastrar</button>
+        <button onclick="showLogin()">Voltar</button>
+    </div>
 
-    <!-- Login Form Section -->
-    <section id="login" style="display:none;">
-        <div class="login-form">
-            <h2>Login</h2>
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button onclick="login()">Entrar</button>
-            <p id="error-message" style="color: red; display: none;">Credenciais inválidas. Tente novamente.</p>
-        </div>
-    </section>
+    <div id="dashboard">
+        <h2>Bem-vindo, <span id="username"></span></h2>
+        <button onclick="showComplaints()">Fazer Reclamação</button>
+        <button onclick="showFeedbacks()">Enviar Feedback</button>
+        <button onclick="logout()">Sair</button>
+    </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>Sobre nós</h2>
-        <p>Somos uma equipe de profissionais de segurança cibernética, especializados em proteger sistemas contra intrusões e vulnerabilidades.</p>
-        <p>Nosso foco é sempre a ética e a educação digital para um futuro mais seguro e tecnológico.</p>
-    </section>
+    <div id="complaints" class="hidden">
+        <h2>Registrar Reclamação</h2>
+        <input type="text" id="complaintTitle" placeholder="Título"><br>
+        <textarea id="complaintDesc" placeholder="Descrição"></textarea><br>
+        <button onclick="submitComplaint()">Enviar</button>
+        <button onclick="showDashboard()">Voltar</button>
+        <h3>Reclamações:</h3>
+        <ul id="complaintList"></ul>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para mais informações sobre hacking ético e segurança digital.</p>
-        <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:importsbengs@gmail.com">importsbengs@gmail.com</a></p>
-            <p><strong>Telefone:</strong> +55 99 99933-9070</p>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2025 Hacking Info. Todos os direitos reservados. <br> Desenvolvido por <a href="mailto:leonardoaraujo85677@gmail.com">Leonardo Araujo</a></p>
-    </footer>
+    <div id="feedbacks" class="hidden">
+        <h2>Enviar Feedback</h2>
+        <textarea id="feedbackText" placeholder="Digite seu feedback"></textarea><br>
+        <button onclick="submitFeedback()">Enviar</button>
+        <button onclick="showDashboard()">Voltar</button>
+        <h3>Feedbacks:</h3>
+        <ul id="feedbackList"></ul>
+    </div>
 
     <script>
+        function showRegister() {
+            document.getElementById('login').classList.add('hidden');
+            document.getElementById('register').classList.remove('hidden');
+        }
+
         function showLogin() {
-            document.getElementById('login').style.display = 'block';
+            document.getElementById('register').classList.add('hidden');
+            document.getElementById('login').classList.remove('hidden');
+        }
+
+        function showDashboard() {
+            document.getElementById('login').classList.add('hidden');
+            document.getElementById('dashboard').style.display = 'block';
+            document.getElementById('complaints').classList.add('hidden');
+            document.getElementById('feedbacks').classList.add('hidden');
+            document.getElementById('username').innerText = localStorage.getItem('loggedUser');
+        }
+
+        function showComplaints() {
+            document.getElementById('dashboard').style.display = 'none';
+            document.getElementById('complaints').classList.remove('hidden');
+            loadComplaints();
+        }
+
+        function showFeedbacks() {
+            document.getElementById('dashboard').style.display = 'none';
+            document.getElementById('feedbacks').classList.remove('hidden');
+            loadFeedbacks();
+        }
+
+        function register() {
+            let user = document.getElementById('registerUser').value;
+            let pass = document.getElementById('registerPass').value;
+            
+            if (localStorage.getItem(user)) {
+                alert('Usuário já existe!');
+                return;
+            }
+            localStorage.setItem(user, pass);
+            alert('Cadastro realizado!');
+            showLogin();
         }
 
         function login() {
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
+            let user = document.getElementById('loginUser').value;
+            let pass = document.getElementById('loginPass').value;
 
-            // Verificação simples para exemplificar, em um projeto real isso deve ser feito no back-end
-            if(username === "admin" && password === "12345") {
-                alert("Login bem-sucedido!");
-                document.getElementById('login').style.display = 'none';
+            if (localStorage.getItem(user) === pass) {
+                localStorage.setItem('loggedUser', user);
+                showDashboard();
             } else {
-                document.getElementById('error-message').style.display = 'block';
+                alert('Usuário ou senha incorretos.');
             }
+        }
+
+        function logout() {
+            localStorage.removeItem('loggedUser');
+            location.reload();
+        }
+
+        function submitComplaint() {
+            let title = document.getElementById('complaintTitle').value;
+            let desc = document.getElementById('complaintDesc').value;
+
+            if (!title || !desc) {
+                alert('Preencha todos os campos!');
+                return;
+            }
+
+            let complaints = JSON.parse(localStorage.getItem('complaints')) || [];
+            complaints.push({ user: localStorage.getItem('loggedUser'), title, desc });
+            localStorage.setItem('complaints', JSON.stringify(complaints));
+            alert('Reclamação enviada!');
+            loadComplaints();
+        }
+
+        function loadComplaints() {
+            let complaints = JSON.parse(localStorage.getItem('complaints')) || [];
+            let list = document.getElementById('complaintList');
+            list.innerHTML = '';
+
+            complaints.forEach(c => {
+                let li = document.createElement('li');
+                li.innerHTML = `<strong>${c.user}:</strong> <br> <strong>${c.title}</strong> - ${c.desc}`;
+                list.appendChild(li);
+            });
+        }
+
+        function submitFeedback() {
+            let text = document.getElementById('feedbackText').value;
+
+            if (!text) {
+                alert('Digite um feedback!');
+                return;
+            }
+
+            let feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+            feedbacks.push({ user: localStorage.getItem('loggedUser'), text });
+            localStorage.setItem('feedbacks', JSON.stringify(feedbacks));
+            alert('Feedback enviado!');
+            loadFeedbacks();
+        }
+
+        function loadFeedbacks() {
+            let feedbacks = JSON.parse(localStorage.getItem('feedbacks')) || [];
+            let list = document.getElementById('feedbackList');
+            list.innerHTML = '';
+
+            feedbacks.forEach(f => {
+                let li = document.createElement('li');
+                li.innerHTML = `<strong>${f.user}:</strong> ${f.text}`;
+                list.appendChild(li);
+            });
+        }
+
+        if (localStorage.getItem('loggedUser')) {
+            showDashboard();
         }
     </script>
 
