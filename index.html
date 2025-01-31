@@ -11,6 +11,9 @@
             margin: 0;
             padding: 0;
             color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background-color: #2c3e50;
@@ -36,6 +39,7 @@
         }
         .container {
             margin: 20px;
+            flex-grow: 1; /* This ensures the container takes the remaining height */
         }
         .section-title {
             font-size: 24px;
@@ -61,9 +65,9 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
-            width: 100%;
+            position: relative;
             bottom: 0;
+            width: 100%;
         }
         /* Three dots menu */
         .three-dots {
@@ -143,62 +147,5 @@
             </div>
             <div>
                 <h3>Equifax (2017)</h3>
-                <p>Vazamento de dados de 147 milhões de pessoas, resultando em um dos maiores escândalos de privacidade.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="security">
-        <h2 class="section-title">Técnicas de Segurança Cibernética</h2>
-        <div class="content">
-            <div>
-                <h3>Phishing</h3>
-                <p>Engana usuários para roubar dados pessoais, como senhas e informações bancárias. Proteja-se nunca clicando em links suspeitos.</p>
-            </div>
-            <div>
-                <h3>Ransomware</h3>
-                <p>Programa malicioso que bloqueia arquivos do usuário e exige pagamento. A melhor forma de prevenção é ter backups regulares.</p>
-            </div>
-            <div>
-                <h3>SQL Injection</h3>
-                <p>Ataque realizado explorando falhas em bancos de dados. Proteja-se utilizando prepared statements em queries de bancos de dados.</p>
-            </div>
-            <div>
-                <h3>DDoS</h3>
-                <p>Ataques de negação de serviço distribuída, sobrecarregando um servidor com tráfego. Proteja-se utilizando serviços de mitigação de DDoS.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="contact">
-        <h2 class="section-title">Contato</h2>
-        <p>Entre em contato conosco pelo email: <strong>importsbengs@gmail.com</strong> ou pelo telefone: <strong>+55 99 999339070</strong></p>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2025 Fenix - Todos os direitos reservados</p>
-</footer>
-
-<div class="three-dots" onclick="toggleMenu()">...</div>
-<div class="menu" id="menu">
-    <a href="#home">Início</a>
-    <a href="#attacks">Ataques Cibernéticos</a>
-    <a href="#security">Segurança Cibernética</a>
-    <a href="#contact">Contato</a>
-</div>
-
-<script>
-    function toggleMenu() {
-        var menu = document.getElementById('menu');
-        if (menu.style.display === 'block') {
-            menu.style.display = 'none';
-        } else {
-            menu.style.display = 'block';
-        }
-    }
-</script>
-
-</body>
-</html>
+                <p>Vazamento d
 
